@@ -1,6 +1,6 @@
 (function () {
   
-  var debugMode = true;
+  var debugMode = false;
 
   var _submit,
     _close,
