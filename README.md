@@ -1,5 +1,5 @@
-# sketch-isometric `Ctrl + shift + I`
-Generate Isometric view from Artboard or Rectangle in Sketch app.
+# Sketch Isometric Plugin `Ctrl + shift + I`
+Generate Isometric views from Artboards and Rectangles in Sketch app.
 
 ![Single Border example](http://www.sureskumar.com/singleborder/github_imgs/sketch_single_border_01.gif)
 
@@ -26,7 +26,7 @@ Colors of the sides can be changed manually after quiting the plugin. Just selec
 
 ### Map Top Surface
 Magic Mirror plugin can be used to map the desired artboard on top of the Isometric view.
-
+![Single Border example](http://www.sureskumar.com/singleborder/github_imgs/sketch_single_border_03.gif)
 
 
 ## Installation
