@@ -1,0 +1,33 @@
+{
+	"name": "SketchIsometric",
+	"identifier": "com.sureskumar.sketchisometric",
+	"version": "1.0.0",
+  	"compatibleVersion": "40.0",
+  	"appcast": "http://www.sureskumar.com/sketch-isometric/sketch-isometric.xml",
+	"description": "Generate isometric view from Artboard or Rectangle in Sketch.",
+	"icon" : "http://www.sureskumar.com/sketch-isometric/github_imgs/logo.png",
+	"author": "Sures Kumar",
+	"authorEmail": "sures.srinivasan@gmail.com",
+	"homepage": "http://www.sureskumar.com",
+	"menu": {
+    "isRoot": false,
+    "items": [
+      "iso",
+      "feedback"
+    ],
+    "title": "Sketch Isometric"
+  },
+  "commands": [{
+    "name": "Generate Isometric View",
+    "identifier": "iso",
+    "shortcut": "ctrl shift i",
+    "handler": "sketchisometric",
+    "script": "md.sketchscript"
+  },
+  {
+    "name": "Feedback",
+    "identifier": "feedback",
+    "handler": "feedback",
+    "script": "links.sketchscript"
+  }]
+}

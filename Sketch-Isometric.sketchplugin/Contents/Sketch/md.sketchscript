@@ -1,0 +1,7 @@
+@import "scripts/common.js";
+@import "scripts/MochaJSDelegate.js";
+
+// Init
+function commandInit(context) { MD.init(context, "init"); }
+// Buttons
+function sketchisometric(context) { MD.init(context, 'generate-pattern');}

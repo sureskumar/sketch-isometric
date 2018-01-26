@@ -1,0 +1,8 @@
+function openURL(url){
+  var nsurl = NSURL.URLWithString(url);
+  NSWorkspace.sharedWorkspace().openURL(nsurl)
+}
+
+function feedback(){
+  openURL('https://github.com/sureskumar/sketch-isometric/issues/new');
+}
