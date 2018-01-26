@@ -1,7 +1,7 @@
 # Sketch Isometric Plugin `Ctrl + shift + I`
 Generate Isometric views from Artboards and Rectangles in Sketch app.
 
-![Single Isometric example](http://www.sureskumar.com/singleborder/github_imgs/sketch_isometric_01.gif)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_01.gif)
 
 ## Steps
 1. Select source Artboard / Rectangle
@@ -11,18 +11,18 @@ Generate Isometric views from Artboards and Rectangles in Sketch app.
 
 ## Features
 ### Depth
-![Single Isometric example](http://www.sureskumar.com/singleborder/github_imgs/sketch_isometric_02.gif)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_02.gif)
 
 ### Scale
-![Single Isometric example](http://www.sureskumar.com/singleborder/github_imgs/sketch_isometric_03.gif)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_03.gif)
 
 ### Color
 Colors of the sides can be changed manually after quiting the plugin. Just select the appropriate shape and update fill with your desired color.
-![Single Isometric example](http://www.sureskumar.com/singleborder/github_imgs/sketch_isometric_04.gif)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_04.gif)
 
 ### Map Top Surface
 Magic Mirror plugin can be used to map the desired artboard on top of the Isometric view.
-![Single Isometric example](http://www.sureskumar.com/singleborder/github_imgs/sketch_isometric_05.gif)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_05.gif)
 
 
 ## Installation
