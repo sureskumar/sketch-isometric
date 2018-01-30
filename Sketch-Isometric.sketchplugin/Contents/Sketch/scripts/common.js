@@ -316,7 +316,7 @@ MD.extend({
     return this.MDPanel({
       url: this.pluginSketch + "/panel/table.html",
       width: 130,
-      height: 97,
+      height: 127,
       data: data,
       identifier: 'com.google.material.pattern',
       floatWindow: false,
@@ -325,24 +325,21 @@ MD.extend({
           table: data
         });
         if(self.configs) {  
-          
             if(loopedOnce == 1) {
-                  //var layers = MD.current.layers()
                   var layers = MD.page.layers()
-
                   for (var ia=0; ia < [layers count]; ia++) {
                       var layer = [layers objectAtIndex:ia]
                       if(layer.objectID() == created_looper_group){
                         layer.removeFromParent()
                       }
                   }
-                  MD.runLooper(layer);
+                  if(cl != 1) { 
+                      MD.runLooper(layer);
+                  }
               } else {
                   loopedOnce = 1;
                   MD.runLooper();
               } 
-            
-            
         }
       },
     });
@@ -358,10 +355,8 @@ MD.extend({
     groupLayer.setName(group_new_name);
     created_looper_group = groupLayer.objectID();
       
-    /*
     var rotate_side_receive = MD.configs.table.send_rotate_side;
     MD.superDebug("rotate_side_receive", rotate_side_receive);
-    */
 
     var depth_receive = MD.configs.table.send_depth;
     MD.superDebug("depth_receive", depth_receive);
@@ -375,42 +370,76 @@ MD.extend({
     // Calculate co-ordinates
     x = layerX;
     y = layerY;
-    wx = layerH * scale * 0.75; //height
-    wy = layerW * scale * 0.75; //width
+    wx = layerH * scale * 1; //height
+    wy = layerW * scale * 1; //width
     h = depth;
 
-
-    x1 = x;
-    y1 = y;
-    x2 = x - wx;
-    y2 = y - wx * 0.5;
-    x3 = x - wx;
-    y3 = y - h - wx * 0.5;
-    x4 = x;
-    y4 = y - h * 1;
-    MD.drawBorder ("Left");
-
-
-    x1 = x;
-    y1 = y;
-    x2 = x + wy;
-    y2 = y - wy * 0.5;
-    x3 = x + wy;
-    y3 = y - h - wy * 0.5;
-    x4 = x;
-    y4 = y - h * 1;
-    MD.drawBorder ("Right");
+    if(rotate_side_receive == "Rotate_Left") {
+        //Left
+        x1 = x;
+        y1 = y;
+        x2 = x - wx;
+        y2 = y - wx * 0.5;
+        x3 = x - wx;
+        y3 = y - h - wx * 0.5;
+        x4 = x;
+        y4 = y - h * 1;
+        MD.drawBorder ("Left");
 
 
-    x4 = x;
-    y4 = y - h;
-    x1 = x - wx;
-    y1 = y - h - wx * 0.5;
-    x2 = x - wx + wy;
-    y2 = y - h - (wx * 0.5 + wy * 0.5);
-    x3 = x + wy;
-    y3 = y - h - wy * 0.5;
-    MD.drawBorder ("Top");
+        x1 = x;
+        y1 = y;
+        x2 = x + wy;
+        y2 = y - wy * 0.5;
+        x3 = x + wy;
+        y3 = y - h - wy * 0.5;
+        x4 = x;
+        y4 = y - h * 1;
+        MD.drawBorder ("Right");
+
+        
+        x4 = x;
+        y4 = y - h;
+        x1 = x - wx;
+        y1 = y - h - wx * 0.5;
+        x2 = x - wx + wy;
+        y2 = y - h - (wx * 0.5 + wy * 0.5);
+        x3 = x + wy;
+        y3 = y - h - wy * 0.5;
+        MD.drawBorder ("Top");
+    } else {
+        //Right
+        x1 = x;
+        y1 = y;
+        x2 = x + wx;
+        y2 = y - wx * 0.5;
+        x3 = x + wx;
+        y3 = y - h - wx * 0.5;
+        x4 = x;
+        y4 = y - h * 1;
+        MD.drawBorder ("Right");
+
+
+        x1 = x;
+        y1 = y;
+        x2 = x - wy;
+        y2 = y - wy * 0.5;
+        x3 = x - wy;
+        y3 = y - h - wy * 0.5;
+        x4 = x;
+        y4 = y - h * 1;
+        MD.drawBorder ("Left");
+
+        x4 = x;
+        y4 = y - h;
+        x1 = x + wx;
+        y1 = y - h - wx * 0.5;
+        x2 = x + wx - wy;
+        y2 = y - h - (wx * 0.5 + wy * 0.5);
+        x3 = x - wy;
+        y3 = y - h - wy * 0.5;
+        MD.drawBorder ("Top");
+    }
 
 
     this.document.currentPage().addLayers([groupLayer]);

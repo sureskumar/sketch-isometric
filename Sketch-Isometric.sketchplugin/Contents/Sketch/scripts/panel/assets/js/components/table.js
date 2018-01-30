@@ -30,10 +30,8 @@
   
       var options = {};          
 
-      /*
       options.send_rotate_side = $('#rotate_side').val().trim();
       _superDebug("options.send_rotate_side", options.send_rotate_side);
-      */
 
       options.send_depth = _sendVal('#depth_txt', 0, 10000);
       _superDebug("options.send_depth", options.send_depth);
@@ -65,7 +63,7 @@
 
 
 // Input updates
-//_onChangeTrigger("#rotate_side");
+_onChangeTrigger("#rotate_side");
 _onChangeInput("#depth_txt");
 _onChangeInput("#scale_txt");
 
