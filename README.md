@@ -1,18 +1,25 @@
 # Sketch Isometric Plugin `Ctrl + shift + I`
 Generate Isometric views from Artboards and Rectangles in Sketch app.
 
+
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_08.jpg)
-![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_01.jpg)
-![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_02.jpg)
-![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_05.jpg)
-![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_06.jpg)
-![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_demo_2.gif)
-![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_demo_1.gif)
 
 ## Steps
 1. Select source Artboard / Rectangle
 2. Hit `Ctrl + shift + I` or Run plugin from 'Plugins > Sketch Isomeric > Generate Isometric View'
 3. Select Rotate direction, adjust 'Depth' and 'Scale' as per your requirements and hit 'Done'
+
+
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_01.jpg)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_02.jpg)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_05.jpg)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_06.jpg)
+
+## Can we have some GIFs please ...
+
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_demo_2.gif)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_demo_1.gif)
+
 
 ## Features
 ### Rotation direction
