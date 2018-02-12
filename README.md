@@ -1,14 +1,13 @@
 # Sketch Isometric Plugin `Ctrl + shift + I`
 Generate Isometric views from Artboards and Rectangles in Sketch app.
 
-![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_demo_1.gif)
-![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_demo_2.gif)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_08.jpg)
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_01.jpg)
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_02.jpg)
-![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_07.jpg)
-![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_08.jpg)
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_05.jpg)
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_06.jpg)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_demo_1.gif)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_demo_2.gif)
 
 ## Steps
 1. Select source Artboard / Rectangle
@@ -42,7 +41,7 @@ Make sure you have the latest version of Sketch installed. **(Sketch 40+)**
 2. Double click on `Sketch-Isometric.sketchplugin`
 
 
-## You can also do some isometric illustrstions like these ...
+## You can also do isometric illustrstions like these ...
 
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_04.jpg)
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_12.jpg)
