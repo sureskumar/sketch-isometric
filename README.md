@@ -63,4 +63,4 @@ Email: sures.srinivasan@gmail.com
 
 Illustrations inspired from Nitish Khagwal, Cognitive-scale and many others.
 
-Thanks to Tim Wantland and Kyle Pedersen for inspiriation and moral support :)
+Thanks to Tim Wantland and Kyle Pedersen for inspiration and moral support :)
