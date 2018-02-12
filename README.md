@@ -2,22 +2,12 @@
 Generate Isometric views from Artboards and Rectangles in Sketch app.
 
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_08.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
-
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_01.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
-
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_02.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
-
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_05.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
-
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_06.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
-
-![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_demo_1.gif)
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_demo_2.gif)
+![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_demo_1.gif)
 
 ## Steps
 1. Select source Artboard / Rectangle
@@ -54,25 +44,12 @@ Make sure you have the latest version of Sketch installed. **(Sketch 40+)**
 ## You can also do isometric illustrations like these ...
 
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_04.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
-
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_12.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
-
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_11.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
-
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_03.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
-
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_13.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
-
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_10.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
-
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_09.jpg)
-*Inspired by XYZ slkfhsd f dsdsfsdfsdf*
 
 ## Contact me
 
@@ -81,3 +58,9 @@ Feel free to contact me for any suggestions or critique.
 Email: sures.srinivasan@gmail.com
 
 [Portfolio](http://www.sureskumar.com)
+
+## Thanks / Credits
+
+Illustrations inspired from Nitish Khagwal, Cognitive-scale and many others.
+
+Thanks to Tim Wantland and Kyle Pedersen for inspiriation and moral support :)
