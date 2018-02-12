@@ -9,6 +9,7 @@ Generate Isometric views from Artboards and Rectangles in Sketch app.
 2. Hit `Ctrl + shift + I` or Run plugin from 'Plugins > Sketch Isomeric > Generate Isometric View'
 3. Select Rotate direction, adjust 'Depth' and 'Scale' as per your requirements and hit 'Done'
 
+## More examples ...
 
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_01.jpg)
 ![Single Isometric example](http://www.sureskumar.com/sketch-isometric/github_imgs/sketch_isometric_sample_02.jpg)
