@@ -26,11 +26,19 @@
       }
   }
 
+  var _sendAngle = function (element, lessThan, greaterThan, sendVal) {
+    if($(element).val().trim() < lessThan || $(element).val().trim() > greaterThan || isNaN($(element).val().trim())) {
+      return sendVal;
+    } else {
+      return $(element).val().trim();
+    }
+}
+
   _submit = function () {
   
       var options = {};          
 
-      options.send_rotate_side = $('#rotate_side').val().trim();
+      options.send_rotate_side = _sendAngle('#rotate_side', -360, 360, 30);
       _superDebug("options.send_rotate_side", options.send_rotate_side);
 
       options.send_depth = _sendVal('#depth_txt', 0, 10000);

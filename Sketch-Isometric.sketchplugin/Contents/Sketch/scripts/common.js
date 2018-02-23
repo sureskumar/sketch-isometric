@@ -30,6 +30,8 @@ var y3;
 var x4;
 var y4;
 
+var angle;
+
 var MD = {
   init: function (context, command, args) {
     var commandOptions = '' + args;
@@ -374,72 +376,39 @@ MD.extend({
     wy = layerW * scale * 1; //width
     h = depth;
 
-    if(rotate_side_receive == "Rotate_Left") {
-        //Left
-        x1 = x;
-        y1 = y;
-        x2 = x - wx;
-        y2 = y - wx * 0.5;
-        x3 = x - wx;
-        y3 = y - h - wx * 0.5;
-        x4 = x;
-        y4 = y - h * 1;
-        MD.drawBorder ("Left");
+    angle = rotate_side_receive * (Math.PI / 180);
+      //Left
+      x1 = x;
+      y1 = y;
+      x2 = x - wx;
+      y2 = y - wx * Math.sin(angle);
+      x3 = x - wx;
+      y3 = y - h - wx * Math.sin(angle);
+      x4 = x;
+      y4 = y - h * 1;
+      MD.drawBorder ("Left");
 
 
-        x1 = x;
-        y1 = y;
-        x2 = x + wy;
-        y2 = y - wy * 0.5;
-        x3 = x + wy;
-        y3 = y - h - wy * 0.5;
-        x4 = x;
-        y4 = y - h * 1;
-        MD.drawBorder ("Right");
+      x1 = x;
+      y1 = y;
+      x2 = x + wy;
+      y2 = y - wy * Math.sin(angle);
+      x3 = x + wy;
+      y3 = y - h - wy * Math.sin(angle);
+      x4 = x;
+      y4 = y - h * 1;
+      MD.drawBorder ("Right");
 
-        
-        x4 = x;
-        y4 = y - h;
-        x1 = x - wx;
-        y1 = y - h - wx * 0.5;
-        x2 = x - wx + wy;
-        y2 = y - h - (wx * 0.5 + wy * 0.5);
-        x3 = x + wy;
-        y3 = y - h - wy * 0.5;
-        MD.drawBorder ("Top");
-    } else {
-        //Right
-        x1 = x;
-        y1 = y;
-        x2 = x + wx;
-        y2 = y - wx * 0.5;
-        x3 = x + wx;
-        y3 = y - h - wx * 0.5;
-        x4 = x;
-        y4 = y - h * 1;
-        MD.drawBorder ("Right");
-
-
-        x1 = x;
-        y1 = y;
-        x2 = x - wy;
-        y2 = y - wy * 0.5;
-        x3 = x - wy;
-        y3 = y - h - wy * 0.5;
-        x4 = x;
-        y4 = y - h * 1;
-        MD.drawBorder ("Left");
-
-        x4 = x;
-        y4 = y - h;
-        x1 = x + wx;
-        y1 = y - h - wx * 0.5;
-        x2 = x + wx - wy;
-        y2 = y - h - (wx * 0.5 + wy * 0.5);
-        x3 = x - wy;
-        y3 = y - h - wy * 0.5;
-        MD.drawBorder ("Top");
-    }
+      
+      x4 = x;
+      y4 = y - h;
+      x1 = x - wx;
+      y1 = y - h - wx * Math.sin(angle);
+      x2 = x - wx + wy;
+      y2 = y - h - (wx * Math.sin(angle) + wy * Math.sin(angle));
+      x3 = x + wy;
+      y3 = y - h - wy * Math.sin(angle);
+      MD.drawBorder ("Top");
 
 
     this.document.currentPage().addLayers([groupLayer]);
