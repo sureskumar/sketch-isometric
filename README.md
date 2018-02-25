@@ -43,6 +43,11 @@ Colors of the sides can be changed manually after quiting the plugin. Just selec
 
 ## Installation
 
+#### Recommended
+* Install via Sketch Runner by searching for Sketch Isometric.
+
+#### Old-Fashioned
+
 Make sure you have the latest version of Sketch installed. **(Sketch 40+)**
 
 1. [Download the ZIP file of this repository](https://github.com/sureskumar/sketch-isometric/archive/master.zip)
