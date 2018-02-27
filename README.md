@@ -44,7 +44,7 @@ Colors of the sides can be changed manually after quiting the plugin. Just selec
 ## Installation
 
 #### Recommended
-* Install via Sketch Runner by searching for Sketch Isometric.
+* Install via Sketch Runner or [Sketchpacks](https://sketchpacks.com/sureskumar/sketch-isometric/install) by searching for Sketch Isometric.
 
 #### Old-Fashioned
 
