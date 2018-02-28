@@ -30,8 +30,6 @@ var y3;
 var x4;
 var y4;
 
-var angle;
-
 var MD = {
   init: function (context, command, args) {
     var commandOptions = '' + args;
@@ -379,7 +377,7 @@ MD.extend({
     wy = layerW * scale * 1; //width
     h = depth;
 
-    var angle;
+    var angle, sine_angle;
 
     if(rotate_side_receive == "Rotate_Left") {
       angle = rotate_angle_receive * (Math.PI / 180);
