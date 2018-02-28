@@ -16,8 +16,8 @@ html {
 }
 .settings-panel {
   position: absolute;
-  left: 0px;
-  top:6px;  
+  left: 0;
+  top: 0;  
   z-index: 100;
   -webkit-user-select: none;
 }
@@ -81,7 +81,8 @@ html {
   width: 60px;
 }
 #depth_txt,
-#scale_txt {
+#scale_txt,
+#rotate_angle_txt {
   width: 57px;
 }
 .ui_txt {

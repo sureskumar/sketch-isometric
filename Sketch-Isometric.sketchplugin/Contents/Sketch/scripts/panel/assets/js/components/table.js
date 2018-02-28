@@ -27,21 +27,25 @@
   }
 
   var _sendAngle = function (element, lessThan, greaterThan, sendVal) {
-    if($(element).val().trim() < lessThan || $(element).val().trim() > greaterThan || isNaN($(element).val().trim())) {
-      return sendVal;
-    } else {
-      return $(element).val().trim();
-    }
+      value = parseInt($(element).val().trim());
+      if( (value > lessThan && value < greaterThan) && !isNaN(value)) {
+        return $(element).val().trim();
+      } else {
+        return sendVal;
+      }
 }
 
   _submit = function () {
   
       var options = {};          
 
-      options.send_rotate_side = _sendAngle('#rotate_side', -360, 360, 30);
+      options.send_rotate_side = $('#rotate_side').val().trim();
       _superDebug("options.send_rotate_side", options.send_rotate_side);
 
-      options.send_depth = _sendVal('#depth_txt', 0, 10000);
+      options.send_rotate_angle = _sendAngle('#rotate_angle_txt', -180, 180, 180);
+      _superDebug("options.send_rotate_angle", options.send_rotate_angle);
+
+      options.send_depth = _sendVal('#depth_txt', 0, 100);
       _superDebug("options.send_depth", options.send_depth);
 
       options.send_scale = _sendVal('#scale_txt', 0.01, 100);
@@ -72,6 +76,7 @@
 
 // Input updates
 _onChangeTrigger("#rotate_side");
+_onChangeInput("#rotate_angle_txt");
 _onChangeInput("#depth_txt");
 _onChangeInput("#scale_txt");
 

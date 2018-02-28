@@ -318,7 +318,7 @@ MD.extend({
     return this.MDPanel({
       url: this.pluginSketch + "/panel/table.html",
       width: 130,
-      height: 127,
+      height: 145,
       data: data,
       identifier: 'com.google.material.pattern',
       floatWindow: false,
@@ -360,6 +360,9 @@ MD.extend({
     var rotate_side_receive = MD.configs.table.send_rotate_side;
     MD.superDebug("rotate_side_receive", rotate_side_receive);
 
+    var rotate_angle_receive = MD.configs.table.send_rotate_angle;
+    MD.superDebug("rotate_angle_receive",rotate_angle_receive);
+
     var depth_receive = MD.configs.table.send_depth;
     MD.superDebug("depth_receive", depth_receive);
 
@@ -376,14 +379,24 @@ MD.extend({
     wy = layerW * scale * 1; //width
     h = depth;
 
-    angle = rotate_side_receive * (Math.PI / 180);
+    var angle;
+
+    if(rotate_side_receive == "Rotate_Left") {
+      angle = rotate_angle_receive * (Math.PI / 180);
+     } 
+     else 
+      angle = ((180 -rotate_angle_receive) * (Math.PI / 180)); //suplementary angle
+    
+    sine_angle = Math.sin(angle);
+
+    if(rotate_side_receive == "Rotate_Left") {
       //Left
       x1 = x;
       y1 = y;
       x2 = x - wx;
-      y2 = y - wx * Math.sin(angle);
+      y2 = y - wx * sine_angle;
       x3 = x - wx;
-      y3 = y - h - wx * Math.sin(angle);
+      y3 = y - h - wx * sine_angle;
       x4 = x;
       y4 = y - h * 1;
       MD.drawBorder ("Left");
@@ -392,9 +405,9 @@ MD.extend({
       x1 = x;
       y1 = y;
       x2 = x + wy;
-      y2 = y - wy * Math.sin(angle);
+      y2 = y - wy * sine_angle;
       x3 = x + wy;
-      y3 = y - h - wy * Math.sin(angle);
+      y3 = y - h - wy * sine_angle;
       x4 = x;
       y4 = y - h * 1;
       MD.drawBorder ("Right");
@@ -403,13 +416,46 @@ MD.extend({
       x4 = x;
       y4 = y - h;
       x1 = x - wx;
-      y1 = y - h - wx * Math.sin(angle);
+      y1 = y - h - wx * sine_angle;
       x2 = x - wx + wy;
-      y2 = y - h - (wx * Math.sin(angle) + wy * Math.sin(angle));
+      y2 = y - h - (wx * sine_angle + wy * sine_angle);
       x3 = x + wy;
-      y3 = y - h - wy * Math.sin(angle);
+      y3 = y - h - wy * sine_angle;
       MD.drawBorder ("Top");
+    }
+    else{
+      //Right
+      x1 = x;
+      y1 = y;
+      x2 = x + wx;
+      y2 = y - wx * sine_angle;
+      x3 = x + wx;
+      y3 = y - h - wx * sine_angle;
+      x4 = x;
+      y4 = y - h * 1;
+      MD.drawBorder ("Right");
 
+
+      x1 = x;
+      y1 = y;
+      x2 = x - wy;
+      y2 = y - wy * sine_angle;
+      x3 = x - wy;
+      y3 = y - h - wy * sine_angle;
+      x4 = x;
+      y4 = y - h * 1;
+      MD.drawBorder ("Left");
+
+      x4 = x;
+      y4 = y - h;
+      x1 = x + wx;
+      y1 = y - h - wx * sine_angle;
+      x2 = x + wx - wy;
+      y2 = y - h - (wx * sine_angle + wy * sine_angle);
+      x3 = x - wy;
+      y3 = y - h - wy * sine_angle;
+      MD.drawBorder ("Top");
+    }
 
     this.document.currentPage().addLayers([groupLayer]);
     groupLayer.resizeToFitChildrenWithOption(0);
