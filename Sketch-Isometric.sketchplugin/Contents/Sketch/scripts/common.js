@@ -444,15 +444,14 @@ MD.extend({
       y4 = y - h * 1;
       MD.drawBorder ("Left");
 
-      x4 = x;
-      y4 = y - h;
-      x1 = x + wx;
-      y1 = y - h - wx * sine_angle;
-      x2 = x + wx - wy;
-      y2 = y - h - (wx * sine_angle + wy * sine_angle);
-      x3 = x - wy;
-      y3 = y - h - wy * sine_angle;
-      MD.drawBorder ("Top");
+      x3 = x;
+      y3 = y - h;
+      x4 = x + wx;
+      y4 = y - h - wx * sine_angle;
+      x1 = x + wx - wy;
+      y1 = y - h - (wx * sine_angle + wy * sine_angle);
+      x2 = x - wy;
+      y2 = y - h - wy * sine_angle;
     }
 
     this.document.currentPage().addLayers([groupLayer]);
