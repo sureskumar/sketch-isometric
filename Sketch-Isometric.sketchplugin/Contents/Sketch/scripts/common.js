@@ -452,6 +452,7 @@ MD.extend({
       y1 = y - h - (wx * sine_angle + wy * sine_angle);
       x2 = x - wy;
       y2 = y - h - wy * sine_angle;
+      MD.drawBorder ("Top");
     }
 
     this.document.currentPage().addLayers([groupLayer]);
