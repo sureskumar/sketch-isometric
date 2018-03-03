@@ -74,6 +74,8 @@ Email: sures.srinivasan@gmail.com
 
 ## Thanks / Credits
 
+Thanks to [Gokulan Vikash](https://github.com/gokul0) for collaborating and adding really cool features.
+
 Illustrations inspired from Nitish Khagwal, Cognitive-scale and many others.
 
 Thanks to Tim Wantland and Kyle Pedersen for inspiration and moral support :)
