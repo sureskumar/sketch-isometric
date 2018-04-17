@@ -8,6 +8,11 @@ Generate Isometric views from Artboards and Rectangles in Sketch app.
 1. Select source Artboard / Rectangle
 2. Hit `Ctrl + shift + I` or Run plugin from 'Plugins > Sketch Isomeric > Generate Isometric View'
 3. Select Rotate direction, adjust 'Depth' and 'Scale' as per your requirements and hit 'Done'
+4. Use [Magic Mirror](https://magicsketch.io/mirror/) (free version) or [Angle Plugin](https://designcode.io/angle) (free) to map the contents of your artboard to the generated isometric shape.
+
+## This plugin DOES NOT
+- Map artboard contents to the generated isometric shapes. See step 4 above for details.
+- Support rounded corners. If anyone knows how to do this, please reach out to me.
 
 ## More examples ...
 
