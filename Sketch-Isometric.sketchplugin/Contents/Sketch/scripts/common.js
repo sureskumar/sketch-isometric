@@ -484,7 +484,9 @@ MD.extend({
     path.lineToPoint(NSMakePoint(x4, y4));
     path.closePath();
 
-    var shape = MSShapeGroup.shapeWithBezierPath(path);
+    //var shape = MSShapeGroup.shapeWithBezierPath(path);
+    var newBezier = MSPath.pathWithBezierPath(path);
+    var shape = MSShapeGroup.shapeWithBezierPath(newBezier);
     var border = shape.style().addStylePartOfType(0);
     var color1 = MSColor.colorWithRed_green_blue_alpha(0.38, 0.38, 0.38, 1.0);
     var color2 = MSColor.colorWithRed_green_blue_alpha(0.61, 0.61, 0.61, 1.0);
