@@ -6,5 +6,5 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-113145849-1', 'auto');
 
 ga('set', 'checkProtocolTask', function(data) {
-  data.set('location', 'http://www.sureskumar/sketch-isometric/');
+  //data.set('location', 'http://www.sureskumar/sketch-isometric/');
 });

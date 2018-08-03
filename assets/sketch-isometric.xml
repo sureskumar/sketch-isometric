@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Sketch Isometric</title>
+    <link>http://www.sureskumar.com/sketch-isometric/sketch-isometric.xml</link>
+    <description>Generate Isometric views from Artboards and Rectangles in Sketch app.</description>
+    <language>en</language>
+      <item>
+        <title>Version 1.0</title>
+        <description>
+          <![CDATA[
+            <ul>
+            <li>v1.0</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>Sun, 11 Feb 2018 11:58:00 +0000</pubDate>
+        <enclosure url="https://github.com/sureskumar/sketch-isometric/archive/5c1f4060a772e181edda2344de937586e6ddd943.zip" sparkle:version="1.0" length="70812" type="application/octet-stream" />
+      </item>
+      <item>
+        <title>Version 2.0</title>
+        <description>
+          <![CDATA[
+            <ul>
+            <li>v2.0</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>Fri, 2 Mar 2018 10:00:00 +0000</pubDate>
+        <enclosure url="https://github.com/sureskumar/sketch-isometric/archive/6b565185808b1003d34e1dab46799cf93d72de29.zip" sparkle:version="2.0" length="68931" type="application/octet-stream" />
+      </item>
+      <item>
+        <title>Version 2.1</title>
+        <description>
+          <![CDATA[
+            <ul>
+            <li>v2.1</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>Fri, 11 May 2018 10:00:00 +0000</pubDate>
+        <enclosure url="https://github.com/sureskumar/sketch-isometric/archive/74e3a948291bdc0532b2883ea5bbdd919eaa4844.zip" sparkle:version="2.1" length="69155" type="application/octet-stream" />
+      </item>
+      <item>
+        <title>Version 3.0</title>
+        <description>
+          <![CDATA[
+            <ul>
+            <li>v3.0</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>Fri, 03 Aug 2018 10:00:00 +0000</pubDate>
+        <enclosure url="https://github.com/sureskumar/sketch-isometric/releases/download/v3.0/Sketch-Isometric.sketchplugin.zip" sparkle:version="3.0" length="82786" type="application/octet-stream" />
+      </item>
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html {
   font-family:Helvetica;
-  font-size: 10px;
+  font-size: 12px;
   overflow-y: hidden;
   overflow-x: hidden; 
   background: #E6E6E6;
@@ -17,7 +17,7 @@ html {
 .settings-panel {
   position: absolute;
   left: 0;
-  top: 0;  
+  top: 5;  
   z-index: 100;
   -webkit-user-select: none;
 }
@@ -36,9 +36,9 @@ html {
   right: 0;
   bottom: 0;
   padding-top: 2px;
-  padding-bottom: 2px;
+  padding-bottom: 5px;
   padding-left: 8px;
-  padding-right: 3px;
+  padding-right: 5px;
   z-index: 1000;
   width: 100%;
 }
@@ -69,8 +69,9 @@ html {
   float: right;
 }
 .fl {
-  float: left;
-  margin-left: 5px;
+  float: right;
+  margin-right: 2px;
+  /*margin-left: 5px;*/
 }
 .cell {
   padding: 2px;
@@ -78,12 +79,12 @@ html {
   text-align: left;
 }
 #rotate_side {
-  width: 60px;
+  width: 115px;
 }
 #depth_txt,
 #scale_txt,
 #rotate_angle_txt {
-  width: 57px;
+  width: 110px;
 }
 .ui_txt {
   border-width: 1px;

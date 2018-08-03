@@ -1,14 +1,13 @@
 {
 	"name": "Sketch Isometric",
 	"identifier": "com.sureskumar.sketchisometric",
-	"version": "2.1.0",
-  	"compatibleVersion": "40.0",
-  	"appcast": "http://www.sureskumar.com/sketch-isometric/sketch-isometric.xml",
+	"version": "3.0.0",
+  	"compatibleVersion": "51.0",
+  	"appcast": "https://github.com/sureskumar/sketch-isometric/raw/master/assets/sketch-isometric.xml",
 	"description": "Generate Isometric views from Artboards and Rectangles in Sketch app.",
-	"icon" : "http://www.sureskumar.com/sketch-isometric/github_imgs/logo.png",
+	"icon" : "https://github.com/sureskumar/sketch-isometric/raw/master/assets/logo.png",
 	"author": "Sures Kumar",
 	"authorEmail": "sures.srinivasan@gmail.com",
-	"homepage": "http://www.sureskumar.com",
 	"menu": {
     "isRoot": false,
     "items": [

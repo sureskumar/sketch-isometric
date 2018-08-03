@@ -30,6 +30,11 @@ var y3;
 var x4;
 var y4;
 
+var send_to_x;
+var send_to_y;
+
+
+
 var MD = {
   init: function (context, command, args) {
     var commandOptions = '' + args;
@@ -315,8 +320,8 @@ MD.extend({
     var loopedOnce = 0;
     return this.MDPanel({
       url: this.pluginSketch + "/panel/table.html",
-      width: 130,
-      height: 145,
+      width: 190,
+      height: 150,
       data: data,
       identifier: 'com.google.material.pattern',
       floatWindow: false,
@@ -343,6 +348,11 @@ MD.extend({
         }
       },
     });
+  },
+
+
+  map: function (in_min, in_max, out_min, out_max, val) {
+    return (val - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
   },
 
   runLooper: function () {
@@ -381,14 +391,15 @@ MD.extend({
 
     if(rotate_side_receive == "Rotate_Left") {
       angle = rotate_angle_receive * (Math.PI / 180);
-     } 
-     else 
+    } else {
       angle = ((180 -rotate_angle_receive) * (Math.PI / 180)); //suplementary angle
+    }
     
     sine_angle = Math.sin(angle);
+    MD.superDebug("sine_angle", sine_angle);
 
     if(rotate_side_receive == "Rotate_Left") {
-      //Left
+       //Left
       x1 = x;
       y1 = y;
       x2 = x - wx;
@@ -399,7 +410,6 @@ MD.extend({
       y4 = y - h * 1;
       MD.drawBorder ("Left");
 
-
       x1 = x;
       y1 = y;
       x2 = x + wy;
@@ -409,7 +419,6 @@ MD.extend({
       x4 = x;
       y4 = y - h * 1;
       MD.drawBorder ("Right");
-
       
       x4 = x;
       y4 = y - h;
@@ -420,8 +429,8 @@ MD.extend({
       x3 = x + wy;
       y3 = y - h - wy * sine_angle;
       MD.drawBorder ("Top");
-    }
-    else{
+
+    } else if(rotate_side_receive == "Rotate_Right") {
       //Right
       x1 = x;
       y1 = y;
@@ -453,7 +462,102 @@ MD.extend({
       x2 = x - wy;
       y2 = y - h - wy * sine_angle;
       MD.drawBorder ("Top");
-    }
+    } else if(rotate_side_receive == "Rotate_Hori") {
+      // Horizontal - Rotate Left
+      MD.superDebug("sine_angle", sine_angle);
+      var x_max = wy;
+      
+      if(rotate_angle_receive > 90) {
+        send_to_x = 90;
+      } else if (rotate_angle_receive < 0) {
+        send_to_x = 0;
+      } else {
+        send_to_x = rotate_angle_receive;
+      }
+
+      if(rotate_angle_receive > 180) {
+        send_to_y = 180;
+      } else if (rotate_angle_receive < 0) {
+        send_to_y = 0;
+      } else {
+        send_to_y = rotate_angle_receive;
+      }
+       
+      var x_max_delta = MD.map(0.0,90,0,x_max,send_to_x);
+      MD.superDebug("x_max_delta", x_max_delta);
+
+      var y_max = wx;
+      var y_max_delta = MD.map(0.0,180,0,y_max,send_to_y);
+      MD.superDebug("y_max_delta", y_max_delta); 
+      
+      x1 = x - h;
+      y1 = y;
+      x2 = x;
+      y2 = y;
+      x3 = x;
+      y3 = y + wx;
+      x4 = x - h;
+      y4 = y + wx;
+      MD.drawBorder ("Left");
+      
+      x4 = x;
+      y4 = y + wx;
+      x1 = x;
+      y1 = y;
+      x2 = x + wy - x_max_delta;
+      y2 = y + y_max_delta;
+      x3 = x + wy - x_max_delta;
+      y3 = y + wx - y_max_delta;
+      MD.drawBorder ("Top");
+    } else {
+       // Vertical - Rotate Right
+      MD.superDebug("sine_angle", sine_angle);
+      var x_max = wy;
+      
+      if(rotate_angle_receive > 90) {
+        send_to_x = 90;
+      } else if (rotate_angle_receive < 0) {
+        send_to_x = 0;
+      } else {
+        send_to_x = rotate_angle_receive;
+      }
+
+      if(rotate_angle_receive > 180) {
+        send_to_y = 180;
+      } else if (rotate_angle_receive < 0) {
+        send_to_y = 0;
+      } else {
+        send_to_y = rotate_angle_receive;
+      }
+       
+      var x_max_delta = MD.map(0.0,90,0,x_max,send_to_x);
+      MD.superDebug("x_max_delta", x_max_delta);
+
+      var y_max = wx;
+      var y_max_delta = MD.map(0.0,180,0,y_max,send_to_y);
+      MD.superDebug("y_max_delta", y_max_delta); 
+      
+      x1 = x + wy - x_max_delta;
+      y1 = y;
+      x2 = x + wy - x_max_delta + h;
+      y2 = y;
+      x3 = x + wy - x_max_delta + h;
+      y3 = y + wx;
+      x4 = x + wy - x_max_delta;
+      y4 = y + wx;
+      MD.drawBorder ("Right");
+      
+      
+      x4 = x;
+      y4 = y + wx - y_max_delta;
+      x1 = x;
+      y1 = y + y_max_delta;
+      x2 = x + wy - x_max_delta;
+      y2 = y;
+      x3 = x + wy - x_max_delta;
+      y3 = y + wx;
+      MD.drawBorder ("Top");
+    }   
 
     this.document.currentPage().addLayers([groupLayer]);
     groupLayer.resizeToFitChildrenWithOption(0);
