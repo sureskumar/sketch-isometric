@@ -119,7 +119,8 @@ MD.extend({
 MD.extend({
   addShape: function () {
     var shape = MSRectangleShape.alloc().initWithFrame(NSMakeRect(0, 0, 100, 100));
-    return MSShapeGroup.shapeWithPath(shape);
+    //return MSShapeGroup.shapeWithPath(shape);
+    return shape;
   },
   removeLayer: function (layer) {
     var container = layer.parentGroup();
@@ -590,7 +591,7 @@ MD.extend({
 
     //var shape = MSShapeGroup.shapeWithBezierPath(path);
     var newBezier = MSPath.pathWithBezierPath(path);
-    var shape = MSShapeGroup.shapeWithBezierPath(newBezier);
+    var shape = MSShapeGroup.layerWithPath(newBezier);
     var border = shape.style().addStylePartOfType(0);
     var color1 = MSColor.colorWithRed_green_blue_alpha(0.38, 0.38, 0.38, 1.0);
     var color2 = MSColor.colorWithRed_green_blue_alpha(0.61, 0.61, 0.61, 1.0);
