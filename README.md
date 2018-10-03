@@ -1,4 +1,4 @@
-# Sketch Isometric Plugin v3.0 `Ctrl + shift + I`
+# Sketch Isometric Plugin v4.0 `Ctrl + shift + I`
 Generate Isometric and 3D Rotation views from Artboards and Rectangles in Sketch app.
 
 
