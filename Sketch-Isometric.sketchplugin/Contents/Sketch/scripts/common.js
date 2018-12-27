@@ -386,7 +386,13 @@ MD.extend({
     y = layerY;
     wx = layerH * scale * 1; //height
     wy = layerW * scale * 1; //width
-    h = depth;
+    
+    if(!isNaN(depth)) {
+      h = depth;  
+    } else {
+      h = 0;
+    }
+    
 
     var angle, sine_angle;
 

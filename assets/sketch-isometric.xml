@@ -65,5 +65,17 @@
         <pubDate>Wed, 03 Oct 2018 10:00:00 +0000</pubDate>
         <enclosure url="https://github.com/sureskumar/sketch-isometric/releases/download/v4.0/Sketch-Isometric.sketchplugin.zip" sparkle:version="4.0" length="82796" type="application/octet-stream" />
       </item>
+      <item>
+        <title>Version 4.1</title>
+        <description>
+          <![CDATA[
+            <ul>
+            <li>v4.1</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>Wed, 26 Dec 2018 10:00:00 +0000</pubDate>
+        <enclosure url="https://github.com/sureskumar/sketch-isometric/releases/download/v4.1/Sketch-Isometric.sketchplugin.zip" sparkle:version="4.1" length="67662" type="application/octet-stream" />
+      </item>
   </channel>
 </rss>
