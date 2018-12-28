@@ -5,7 +5,7 @@ Generate Isometric and 3D Rotation views from Artboards and Rectangles in Sketch
 ![Single Isometric example](https://github.com/sureskumar/sketch-isometric/raw/master/assets/sketch_isometric_sample_08.jpg)
 
 ## Video Tutorial from Skillthrive
-![Single Isometric Video Tutorial](https://www.youtube.com/watch?v=8kAlHz9t_5Y)
+[![Single Isometric Video Tutorial](https://github.com/sureskumar/sketch-isometric/raw/master/assets/sketch_isometric_video_tutorial.jpg)](https://www.youtube.com/watch?v=8kAlHz9t_5Y)
 
 ## Steps
 1. Select source Artboard / Rectangle
