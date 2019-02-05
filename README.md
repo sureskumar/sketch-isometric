@@ -58,7 +58,7 @@ Colors of the sides can be changed manually after quiting the plugin. Just selec
 
 Make sure you have the latest version of Sketch installed. **(Sketch 40+)**
 
-1. [Download the ZIP file of this repository](https://github.com/sureskumar/sketch-isometric/releases/download/v3.0/Sketch-Isometric.sketchplugin.zip)
+1. [Download the ZIP file of this repository](https://github.com/sureskumar/sketch-isometric/releases/download/v4.1/Sketch-Isometric.sketchplugin.zip)
 2. Double click on `Sketch-Isometric.sketchplugin`
 
 
