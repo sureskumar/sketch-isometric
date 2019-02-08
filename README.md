@@ -1,4 +1,4 @@
-# Sketch Isometric Plugin v4.1 `Ctrl + shift + I`
+# Sketch Isometric Plugin v4.2 `Ctrl + shift + I`
 Generate Isometric and 3D Rotation views from Artboards and Rectangles in Sketch app.
 
 
@@ -58,7 +58,7 @@ Colors of the sides can be changed manually after quiting the plugin. Just selec
 
 Make sure you have the latest version of Sketch installed. **(Sketch 40+)**
 
-1. [Download the ZIP file of this repository](https://github.com/sureskumar/sketch-isometric/releases/download/v4.1/Sketch-Isometric.sketchplugin.zip)
+1. [Download the ZIP file of this repository](https://github.com/sureskumar/sketch-isometric/releases/download/v4.2/Sketch-Isometric.sketchplugin.zip)
 2. Double click on `Sketch-Isometric.sketchplugin`
 
 
