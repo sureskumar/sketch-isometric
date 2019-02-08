@@ -567,7 +567,11 @@ MD.extend({
     }   
 
     this.document.currentPage().addLayers([groupLayer]);
-    groupLayer.resizeToFitChildrenWithOption(0);
+    if (MSApplicationMetadata.metadata().appVersion >= 53) {
+      groupLayer.fixGeometryWithOptions(1);
+    } else {
+      groupLayer.resizeToFitChildrenWithOption(0);
+    }
 
     var Group_W = groupLayer.frame().width();
     MD.superDebug("Group_W", Group_W);
