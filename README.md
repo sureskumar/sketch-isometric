@@ -9,7 +9,7 @@ Generate Isometric and 3D Rotation views from Artboards and Rectangles in Sketch
 
 ## Steps
 1. Select source Artboard / Rectangle
-2. Hit `Ctrl + shift + I` or Run plugin from 'Plugins > Sketch Isomeric > Generate Isometric View'
+2. Hit `Ctrl + shift + I` or Run plugin from 'Plugins > Sketch Isometric > Generate Isometric View'
 3. Select Rotate direction, adjust 'Depth' and 'Scale' as per your requirements and hit 'Done'
 4. Use [Magic Mirror](https://magicsketch.io/mirror/) (free version) or [Angle Plugin](https://designcode.io/angle) (free) to map the contents of your artboard to the generated isometric shape.
 
