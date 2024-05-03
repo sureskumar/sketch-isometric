@@ -2,7 +2,8 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Sketch Isometric</title>
-    <link>http://www.sureskumar.com/sketch-isometric/sketch-isometric.xml</link>
+    <link>https://github.com/sureskumar/sketch-isometric/raw/master/assets/sketch-isometric.xml</link>
+    
     <description>Generate Isometric views from Artboards and Rectangles in Sketch app.</description>
     <language>en</language>
       <item>
